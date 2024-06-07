@@ -18,5 +18,5 @@ int main(void)
     {
         printf("x is equal to y\n");
     }
-
+// for more on C logic operators visit https://www.freecodecamp.org/news/c-operator-logic-operators-in-c-programming/
 }
