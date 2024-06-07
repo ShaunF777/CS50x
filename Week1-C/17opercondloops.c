@@ -59,7 +59,7 @@ switch(r)                       // switch(r) checks the input number, if its 1 o
     case 2: printf("Two!\n");   // if non are true only 'default' action is taken 'Sorry!'
             break;
     case 3: printf("Three!\n");
-            break;              // without the 'break;' between each case it'll run each
+            break;              // without the 'break;' between each case it'll execute each
     default: printf("Sorry!\n");// concecutive action going further down the cases
 }
 
@@ -74,5 +74,44 @@ switch(t)                       // switch(t) checks the input number, if its 5 o
     default: printf("Party Time!\n");
 }
 
+// Loops
+// 'while' loops are used to repeat executions unknown number of times, or possubly not at all
+// Example 'while' used typically for a controled flow of a game, updating certain aspects, keeping things moving
+while (boolean-expression)  // like repeat untill
+{
+    // if bool-expr is true, all lines here will execute repeatedly top-to-bottom till bool-expr becomes false
+}
 
+// 'do-while' loops are used the same, but executes at least once
+// Example 'do while' similarly, but when you want to prompt the user for input, like 'get_int', using this int for the 'while'
+do
+{
+    // execute all lines once,
+}
+while (boolean-expression)
+
+// 'for' loops are used when you want to execute things for a discrete number of times, though the number may be unknown initialy
+// Example for running more than once, and mostly a specific number of times, but not infinitely
+for (start; bool-expr; increment)  //Like repeat untill, but with more control
+for (int i = 0; i < 13; i++)    // 1st the statement(s) in start are executed
+{                               // 2nd bool-expr is checked, if true the loop is executed
+                                // 3rd the statement(s) in increment are executed
+                                // 4th bool-expr checked again, if true the loop is executed again
+}                               // this continues untill the bool-expr becomes false
+
+common cli utilities:
+mv - move or rename file
+mkdir - make directory
+rm - remove(delete)
+rmdir - remove directory
+ls - list files inside directory
+
+chmod
+sudo
+man
+ln
+clear
+touch
+diff
+telnet
 }
