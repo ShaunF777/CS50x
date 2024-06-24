@@ -1,4 +1,4 @@
-// Week3-Recursion Short
+// Week3-Section excersize
 // The factorial seing what makes up a number like 5 or a pyramid hight 5
 
 #include <cs50.h>
