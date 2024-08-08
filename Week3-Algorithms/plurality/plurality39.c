@@ -1,3 +1,5 @@
+/* This program sets up a simple voting system where users can vote for defined candidates. After all votes are cast, 
+it determines which candidate or candidates received the highest number of votes and announces them as winners.*/
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
