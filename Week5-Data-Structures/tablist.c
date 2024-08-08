@@ -1,3 +1,4 @@
+// Not working merge, please compare with the working file = hash.c
 #include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,16 +21,29 @@ void visualizer(node *list);
 int main(void)
 {
     // Remember singly linked lists, has the back most node allocated 1st
-    node *list = NULL; // Just so it can be attached at the front later
+    table[] = {NULL}; // Just so it can be attached at the front later
 
     // Add items
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < LIST_SIZE; i++)
     {
         string phrase = get_string("Enter a new phrase: ");
 
         // Find phrase bucket
         int bucket = hash(phrase);
         printf("%s hashes to %i\n", phrase, bucket);
+
+        node *n = malloc(sizeof(node));
+        //if (n == NULL)// double check if the memory exists
+            //return 1; // if not then quit
+
+        n->phrase = phrase; // insert phrase we saved
+        n->next = NULL; // preset to NULL = best prectice
+        n->next = table[bucket]; // n->next now points to NULL, this new node now points to the previous one
+        table[bucket] = n; // list now points to what n was pointing to, 1st node, then 2nd node, etc.
+
+
+        // Visualize list after adding a node.
+        visualizer(table[bucket]);
     }
 
      // Free all memory used
